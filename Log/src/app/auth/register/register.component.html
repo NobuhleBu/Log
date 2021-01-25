@@ -1,0 +1,340 @@
+<style>
+  /* You can add global styles to this file, and also import other style files */
+body {
+  margin: auto;
+  padding: 0;
+  background: #DDD;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#login-box {
+  position: relative;
+  margin: 10px auto 0 auto;
+  width: 400px;
+  height: 500px;
+  background:rgb(134, 127, 127);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  padding: center;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 30px;
+  color:white;
+  font-weight: bold;
+  text-align:right;
+}
+h4 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 40px;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+}
+/*input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  transition: 0.2s ease;
+
+}*/
+::placeholder
+{
+    width: 300px;
+}
+/* input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid white;
+  color: white;
+  transition: 0.2s ease;
+
+}*/
+/* .label{
+  font-size: 16px;
+  color: #FFF;
+  text-align: left;
+  padding: left;
+  font-style: normal;
+
+}
+input[type="submit"] {
+  margin-top: 28px;
+  width: 90%;
+  height: 32px;
+  background: #040b66;
+  border: none;
+  border-radius: 8px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+  position:absolute;
+  margin: 10px auto 0 auto;
+}*/
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+/* button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+} */
+
+/* button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+} */
+
+ button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+*input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    transition: 0.2s ease;
+  }
+
+  /* Style inputs */
+input[type=text], input[type="email"] , select {
+  width: 150%;
+  height: 40px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+  padding: left;
+
+
+}
+.input[type=text],input[type="email"],  select {
+  width: 145%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: center;
+  background-color: rgb(228, 228, 240);
+  height: 30px;
+
+}
+
+/* Style the submit button */
+/*input[type=submit] input[type="email"]{
+  position: relative;
+  padding: center;
+  padding-bottom: 50px;
+  bottom: 0;
+  width: 100px;
+  background-color: #adbbae;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px auto 0 auto ;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}*/
+label{
+  text-align: left;
+  font-size: 16px;
+  color: rgb(12, 12, 12);
+  text-align: left;
+  padding: left;
+  font-style: normal;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]  {
+
+  padding: right;
+  width: 90%;
+  height: 32px;
+  background: #040b66;
+  border: none;
+  border-radius: 8px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+  position:absolute;
+  margin: 0px auto 0 auto;
+}
+ input[type="submit"]:hover,
+input[type="submit"]:focus {
+opacity: 0.8;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+opacity: 1;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+transition: 0.1s ease;
+}
+.bg {
+/* The image used */
+background-image: url("assets/images/background.jpg");
+
+/* Full height */
+height: 100%; 
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+</style>
+
+
+<!-- <div class="wrapper">
+  <h1>Update Profile</h1>
+
+  <form>
+
+      <label for="FName"> First Name </label>
+      <input type="text" id="FName" name="FirstName" required>
+      <label for="SName">Surname </label >
+       <input type="text" id="SurName" name="Surname" required>
+      <label for="Email">Email Address </label>
+
+      <input type="email" id="Email" name="EmailAddress"  required>
+      <label for="CellNumber"> Cell Number </label>
+      <input type="text" id="CellNumber" name="CellNumber" required>
+      <input type="submit" value="Update" >
+
+   </form>
+</div> -->
+<div class="bg">
+<div id="login-box">
+  <div class="left">
+      <h1 >Register</h1>
+      <form>
+      <label class = "label" id = "label1"  >LAST NAME</label>
+      <input class="input" type="text" id="Last Name" name="LAST NAME" onsubmit="return validateForm()" method= "post" required>
+      <label class = "label" id = "label2"  >FIRST NAME</label>
+      <input class="input" type="text" id="First Name" name="FIRST NAME"  required>
+      <label class = "label" id = "label3"  >E-MAIL</label>
+      <input class="input" type="email" id="Email" name="EMAIL"  required>
+      <label class = "label" id = "label4"  >PHONE NUMBER</label>
+      <input class="input" type="text" id="Phone Number" name="REGISTER"  required><br>
+      
+       <br>
+      <input type="submit" name="update_submit" routerLink="/login" value="REGISTER" />
+      </form>
+  </div>
+</div>
+</div>
+<script>
+function validateForm() {
+var x = document.forms["myForm"]["LAST NAME"].value;
+for(x = 0; x<=6; x++)
+{
+    document.forms["myForm"][x].value;
+
+    if (x == "") {
+    alert("Name must be filled out");
+    return false;
+    }
+}
+}
+</script>

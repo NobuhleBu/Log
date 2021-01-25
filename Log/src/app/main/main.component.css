@@ -1,0 +1,13 @@
+.main-body {
+    position: absolute;
+    top: 70px;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+}
+
+app-header-profile-menu {
+    position: absolute;
+    top: 69px;
+    right: 25px;
+}

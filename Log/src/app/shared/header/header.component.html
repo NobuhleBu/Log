@@ -1,0 +1,26 @@
+<div class="header">
+
+ <div class="imageHeader">
+    <a [routerLink]="['/']" >
+        <img class="logo" src="../../../assets/images/gijima.png" >
+    </a>
+    <span class="title">Incident Application</span>
+  </div>
+    
+    
+    <div class="profile-container" (click)="toggleProfileMenu()">
+        <div class="profile-picture-circle">
+            
+          <img class="picture" src="../../../assets/images/profile.png">
+        </div>
+        <div class="text-container">
+            <p class="name">Tshigofatso Gwangwa</p>
+          <h4 class="role">User</h4>
+        </div>
+        <img *ngIf="!profileMenu" class="caret" src="../../../assets/caret-down.svg">
+        <img *ngIf="profileMenu" class="caret" src="../../../assets/caret-arrow-up.svg">
+    </div>
+
+    <div class="background-bottom-color">
+    </div>
+</div>
